@@ -1,0 +1,11 @@
+name: My CI Pipeline
+
+on:
+  workflow_dispatch:   # 👉 manual trigger enable karega
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+      - name: Run a script
+        run: echo "Hello, pipeline manually triggered!"
